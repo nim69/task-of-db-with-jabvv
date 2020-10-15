@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naseer Iqbal</title>
+    <style>
+        body {
+            background-color: Orangered;
+            color:white;
+        }
+
+        h2 {
+            width: 80%;
+            text-align: center;
+            border-bottom: 2px solid orange;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+        }
+        form{
+
+            text-align: center;
+
+        }
+    </style>
+
+
+    <script>
+                      function validateForm() {
+                   var x = document.forms["myForm"]["fname"].value;
+
+                   if (x == "") {
+                       alert("Something is Missing Please Check Again.");
+                       return false;
+
+
+                   }
+
+                          var x = document.forms["myForm"]["uname"].value;
+
+                          if (x == "") {
+                              alert("Enter UserName....");
+                              return false;
+
+
+                          }
+                          var x = document.forms["myForm"]["password"].value;
+
+                          if (x == "") {
+                              alert("PLEASE Enter  Your Password ");
+                              return false;
+
+
+                          }
+
+
+
+                          var x = document.forms["myForm"]["cpassword"].value;
+
+                          if (x == "") {
+                              alert("Confirm your Password ..  ");
+                              return false;
+
+
+                          }
+
+
+
+               }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<br><br>
+<h2></h2>
+
+<p><h1>Create Your Account</h1></p><br>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+    <label for="fname">Enter Name:</label> &nbsp <input type="text" maxlength="20" id="fname" name="fname" placeholder="Enter Name Here" ><br><br>
+
+<label for="txtEmail">Enter Email ID:</label> <input type="text" id="txtEmail" name="Email" placeholder="Enter Email ID here" ><br><br>
+
+
+<label for="uname">Enter UserName:</label> <input type="text" id="uname" name="lname" placeholder="Enter Username Here" ><br><br>
+
+    <label for="password">Enter Password:</label> <input type="password" id="password" name="lname" placeholder="Enter Password Here" ><br><br>
+
+
+<label for="password">Enter Conform Password:</label> <input type="password" id="cpassword" name="lname" placeholder="Enter Confirm Password Here" ><br><br>
+
+        <br><br>
+<input type="submit" align="center" class=" btn btn-default" value="Clear form"> &nbsp <input type="SUBMIT" class=" btn btn-default" value="Create Account"><br>
+    </form>
+<h2></h2>
+</body>
+</html>
